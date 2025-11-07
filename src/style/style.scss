@@ -1,0 +1,42 @@
+:root {
+  --color-primary: #000;
+  --color-secondary: #fff;
+  --color-success: #567c38;
+  --color-warning: #e64c37;
+
+  --color-bg-primary: #d6d6d6;
+  --color-bg-secondary: #fff;
+
+  --color-border-primary: #000;
+  --color-border-secondary: #ddd;
+
+  --color-btn-bg: #ebebeb;
+
+  --color-header-bg-primary: #f09087;
+  --color-header-bg-secondary: #dd7758;
+  --color-header-horse-list: #f2eb67;
+  --color-header-race-program: #5288ee;
+  --color-header-race-results: #a0d179;
+
+  --color-table-header-bg: #e5e5e5;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-bg-primary);
+}
+
+@include max($bp-xl) {
+  body {
+    height: auto;
+    overflow: scroll;
+  }
+}

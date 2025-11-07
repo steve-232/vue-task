@@ -1,0 +1,9 @@
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+@mixin max($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
